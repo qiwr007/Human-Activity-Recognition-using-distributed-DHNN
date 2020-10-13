@@ -1,0 +1,14 @@
+<NeuralNetwork>
+	<LearningRate value="0.01"/>
+	<Epochs value="50"/>
+	<BatchSize value="1"/>
+	<BatchIterations value="1"/>
+	<Layers>
+		<Layer layertype="Linear">
+			<Param value="100" />
+			<Param value="12" />
+			<Func name="LeakyReLU" />
+		</Layer>
+		<Layer layertype="LogSoftMax" />
+	</Layers>
+</NeuralNetwork>

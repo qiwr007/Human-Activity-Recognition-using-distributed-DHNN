@@ -1,0 +1,37 @@
+<NeuralNetwork>
+	<LearningRate value="0.01"/>
+	<Epochs value="5"/>
+	<BatchSize value="10"/>
+	<BatchIterations value="6"/>
+	<Layers>
+		<Layer layertype="View">
+			<Param value="561" />
+		</Layer>
+		<Layer layertype="Linear">
+			<Param value="561" />
+			<Param value="450" />
+			<Func name="ReLU" />
+		</Layer>
+		<Layer layertype="Linear">
+			<Param value="450" />
+			<Param value="150" />
+			<Func name="ReLU" />
+		</Layer>
+		<Layer layertype="Linear">
+			<Param value="150" />
+			<Param value="100" />
+			<Func name="ReLU" />
+		</Layer>
+		<Layer layertype="Linear">
+			<Param value="100" />
+			<Param value="50" />
+			<Func name="ReLU" />
+		</Layer>
+		<Layer layertype="Linear">
+			<Param value="50" />
+			<Param value="12" />
+			<Func name="ReLU" />
+		</Layer>
+		<Layer layertype="LogSoftMax" />
+	</Layers>
+</NeuralNetwork>
